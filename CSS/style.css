@@ -17,7 +17,7 @@ h2.resume {
 #front_page{
 	text-align: center;
 	color: white;
-  background:url('/images/background/bg.jpg')no-repeat center center fixed;
+  background:url('../images/background/bg.jpg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -133,7 +133,7 @@ hr{
   color: #83d5e1;
 }
 #about{
-  background:url('/images/background/about1.png')no-repeat center center fixed;
+  background:url('../images/background/about1.png')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -193,7 +193,7 @@ hr{
 }
 
 #projects{
-  background:url('/images/background/project.jpg')no-repeat center center fixed;
+  background:url('../images/background/project.jpg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
