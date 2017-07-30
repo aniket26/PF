@@ -35,7 +35,7 @@ if ($(window).width() > 991) {
   $(function(){
       $('.view-pdf').on('click',function(){
           var pdf_link = $(this).attr('href');
-          var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
+          var iframe = '<div class="iframe-container"><iframe src="https://drive.google.com/file/d/0B4td6RuRXIiBRVNxa0JMSVQxYmc/preview"></iframe></div>'
           $.createModal({
           title:'Resume | Aniket Vikas Patil',
           message: iframe,
