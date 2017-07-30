@@ -1,7 +1,3 @@
-$(document).ready(function(){
-  showHeader1();
-})
-
 var items = document.querySelectorAll(".timeline li");
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
