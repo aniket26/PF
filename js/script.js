@@ -1,3 +1,4 @@
+
 var items = document.querySelectorAll(".timeline li");
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
@@ -71,7 +72,7 @@ $( window ).resize(function() {
   }  else {
     $(function(){
         $('.view-pdf').on('click',function(){
-        
+
               return;
         });
     })
@@ -80,14 +81,14 @@ $( window ).resize(function() {
 });
 
 window.onscroll= function(){
- 
-  // $('.carousel').carousel(interval: 2000;)
-  var x = $("#about").position();
-    if (document.body.scrollTop >x.top-200 || document.documentElement.scrollTop > x.top-200) {
-        $("#navigation_bar").fadeIn("slow");
-    } else {
-        $("#navigation_bar").fadeOut("slow");
-    }
-}
-$('.nav').localScroll();
 
+    // $('.carousel').carousel(interval: 2000;)
+    var x = $("#about").position();
+      if (document.body.scrollTop >x.top-200 || document.documentElement.scrollTop > x.top-200) {
+          $("#navigation_bar").fadeIn("slow");
+      } else {
+          $("#navigation_bar").fadeOut("slow");
+      }
+
+};
+$('.nav').localScroll();
