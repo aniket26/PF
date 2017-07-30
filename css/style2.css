@@ -805,7 +805,7 @@ textarea {
   }
 
   .timeline ul li div {
-    width: calc(100vw - 103px);
+    width: calc(100vw - 107px);
   }
 
   .timeline ul li:nth-child(even) div {
