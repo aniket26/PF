@@ -555,7 +555,7 @@ h2.resume {
 	left:0;
 	display:none;
 	position:fixed;
-	background: url('/images/background/end.jpg');
+	background: url('../images/background/end.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow:auto;
