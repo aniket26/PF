@@ -1,8 +1,5 @@
 window.onscroll= function(){
-  showHeader1();
-}
-$('.nav').localScroll();
-function showHeader1(){
+  function showHeader1(){
   // $('.carousel').carousel(interval: 2000;)
   var x = $("#about").position();
     if (document.body.scrollTop >x.top-200 || document.documentElement.scrollTop > x.top-200) {
@@ -11,6 +8,9 @@ function showHeader1(){
         $("#navigation_bar").fadeOut("slow");
     }
 }
+}
+$('.nav').localScroll();
+
 var items = document.querySelectorAll(".timeline li");
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
