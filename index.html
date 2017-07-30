@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 
@@ -18,9 +19,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-	<link rel="stylesheet" href="CSS/style.css"> <!-- Custom stylesheet-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style2.css"> <!-- Custom stylesheet-->
 </head>
 <body>
+
+<!-- HOME PAGE -->
 <section id="front_page">
 	<div class=" vertical-center">
 		<div class="container">
@@ -32,6 +36,9 @@
 	 	<span class="glyphicon glyphicon-chevron-down"></span>
  	</a>
 </section>
+
+
+<!-- NAVIGATION BAR -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation_bar">
   <div class="container-fluid">
@@ -47,38 +54,47 @@
     </div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="#"><span class="glyphicon glyphicon-home glyphy_icon"></span><span class="glyphy_icon_name">Home</span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user glyphy_icon"></span><span class="glyphy_icon_name">About</span></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-folder-open glyphy_icon"></span><span class="glyphy_icon_name">Projects</span></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-book glyphy_icon"></span><span class="glyphy_icon_name">Education</span></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-envelope glyphy_icon"></span><span class="glyphy_icon_name">Contaxt</span></a></li>
+        <li><a href="#front_page"><span class="glyphicon glyphicon-home glyphy_icon"></span><span class="glyphy_icon_name">Home</span></a></li>
+        <li><a href="#about"><span class="glyphicon glyphicon-user glyphy_icon"></span><span class="glyphy_icon_name">About</span></a></li>
+				<li><a href="#projects"><span class="glyphicon glyphicon-folder-open glyphy_icon"></span><span class="glyphy_icon_name">Projects</span></a></li>
+				<li><a href="#education"><span class="glyphicon glyphicon-book glyphy_icon"></span><span class="glyphy_icon_name">Education</span></a></li>
+				<li><a href="#pubandcert"><span class="glyphicon glyphicon-certificate glyphy_icon"></span><span class="glyphy_icon_name">Certifications and Publications</span></a></li>
+				<li><a href="#contact"><span class="glyphicon glyphicon-envelope glyphy_icon"></span><span class="glyphy_icon_name">Contact</span></a></li>
       </ul>
 		</div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
 
+<!-- PROFILE SECTION -->
 <section id="about">
 	<h2> Profile </h2>
 	<h4 class="quote">&quot;I pride myself in the quality of my work and it does not go unnoticed&quot;</h4>
 	<hr>
+
 	<div class="container">
+
 		<div class="row">
+
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<h3> About me</h3>
-				<p> I am a graduate student in California State University, Long Beach who strongly believes in Buddha's words,
-					&quot;It is better to conquer yourself than to win a thousand battles. Then the victory is yours. It cannot be taken from you, not by angels
-					or by demons, heaven or hell&quot;.</p>
+				<p> I am a graduate student in California State University, Long Beach who strongly believes in Buddha's words,<span class="buddha_quote">&quot;It is better to conquer yourself than to win a thousand battles. Then the victory is yours. It cannot be taken from you, not by angels
+				or by demons, heaven or hell&quot;.</span>
+					</p>
 			</div>
+
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 photo_div">
 				<img class="img-responsive img-circle" src="images/background/demo.png" alt="myPic">
 			</div>
+
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<h3> Details</h3>
+
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<p class="text_bold_left"> Name:</p><p> Aniket Vikas Patil </p>
 						<p class="text_bold_left"> Age:</p><p>24 years</p>
 					</div>
+
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 						<p class="text_bold_left"> Games I play: </p><p> Cricket &amp; Chess</p>
 						<p class="text_bold_left"> Songs I listen to: </p><p> Bollywood</p>
@@ -86,14 +102,22 @@
 
 				</div>
 			</div>
+
 		</div>
+		<div class="row">
+			<div id="downloadResume" class="col-lg-12 col-md-12 col-sd-12 col-xs-12">
+				<a class="btn btn-primary view-pdf" href="/certificates/resume.pdf" target="_blank">Download Resume</a>   
+			</div>
+
+		</div>
+
 	</div>
+
+
 </section>
 
 <section id="projects">
-	<h2> Projects </h2>
-	<h4 class="quote">&quot;We were not sent into this world to do anything into which we cannot put our hearts.&quot; &nbsp; - John Ruskin</h4>
-	<hr>
+	<h2> Projects </h2><hr>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
@@ -192,9 +216,7 @@
 </section>
 
 <section id="education">
-	<h2> Education and Achievements</h2>
-	<h4 class="quote">&quot;The tree laden with fruits always bends low. If you wish to be great, be lowly and meek. &quot; &nbsp; - Ramkrishna Paramhamsa</h4>
-	<hr>
+	<h2> Education and Achievements</h2><hr>
 	<section class="timeline">
   <ul>
 		<li>
@@ -229,8 +251,6 @@
 					<span class="no_indent_span"> &#149;</span>
 	        Bacherlors of Engineering in Information Technology from K.J. Somaiya College of Engineering, Mumbai University, India with a First Class.<br>
 					<span class="no_indent_span"> &#149;</span>
-					Co-authored and published a research paper in ACM Digital Library on 3D Holographic Projections using Prism and Hand Gesture Recognition. <br>
-					<span class="no_indent_span"> &#149;</span>
 					Volunteered for Publicity Event of Technical Festival of the college.
       </div>
     </li>
@@ -242,37 +262,143 @@
 					<span class="no_indent_span"> &#149;</span>
 					Speaker at Global Ideas Lab at TEDx CSULB, 2016. <br>
 					<span class="no_indent_span"> &#149;</span>
-					Co-authored and published a poster for the project Fortified Cards at Requirement Engineering 2016 Conference in Beijing, China <br>
-					<span class="no_indent_span"> &#149;</span>
-					Selected as a Volunteer for upcoming conference at Long Beach by Wonder Women Tech.
+					Selected as a Volunteer for upcoming conference at Long Beach by Wonder Women Tech. <br>
+
+
+
       </div>
     </li>
   </ul>
 </section>
 <br>
 </section>
+<section id="pubandcert">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2> Publications </h2>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<img src="/images/background/acm.png" class="img-responsive">
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<h4><a href="http://dl.acm.org/citation.cfm?id=2743083" target="_blank">3D Holographic Projections using Prism
+										and Hand Gesture Recognition. </a> </h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+									<img src="/images/background/re16.png" class="img-responsive">
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<h4><a href="http://re16.org/pages/conference/poster_demos/" target="_blank"> Application of Artifact-based RE in Fortified Cards. </a> </h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>Certifications</h2>
+					</div>
 
-<!-- <h2>Simple PHP Contact Form</h2>
-<div class="contactFrm">
-    <?php if(!empty($statusMsg)){ ?>
-        <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
-    <?php } ?>
-    <form action="call.php" method="post">
-        <h4>Name</h4>
-        <input type="text" name="name" placeholder="Your Name" required="">
-        <h4>Email </h4>
-        <input type="email" name="email" placeholder="email@example.com" required="">
-        <h4>Subject</h4>
-        <input type="text" name="subject" placeholder="Write subject" required="">
-        <h4>Message</h4>
-        <textarea name="message" placeholder="Write your message here" required=""> </textarea>
-        <input type="submit" name="submit" value="Submit">
-        <div class="clear"> </div>
-    </form>
-</div>
- -->
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front flip2">
+									<!-- front content -->
+									<img src="/images/background/cert1.jpeg" class="img-responsive">
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<h4><a href="/certificates/HTML CSS JS.pdf" target="_blank">HTML, CSS, and JavaScript for Web Developers by John Hopkin's University </a> </h4>
+									<h4><a href="/certificates/JScript.pdf" target="_blank">Java Script Essential Training on Lynda.com </a> </h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front flip2">
+									<!-- front content -->
+									<img src="/images/background/cert.png" class="img-responsive">
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<h4><a href="/certificates/JQuery.pdf" target="_blank">JQuery Essential Training on Lynda.com </a> </h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+<section id="contact">
+	<h2>Connect with me!</h2>
+	<hr>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/AniketP1993" target="_blank" class="fa fa-twitter"></a>
+	<a href="https://www.linkedin.com/in/aniketp2602/" target="_blank"class="fa fa-linkedin"></a>
+	<a href="https://www.instagram.com/doyouneedausername/" target="_blank"class="fa fa-instagram"></a>
+	<a id="popup" onclick="div_show()" class="fa fa-envelope"></a>
+
+	<div class="contactFrm">
+		<div class="inner_form">
+			<form action="call1.php" id="myForm" method="post" name="myForm">
+
+				<img id="close" src="/images/background/close.png" onclick ="div_hide()">
+
+				<h2> Contact Me </h2>
+				<input id="name" name="name" placeholder="Your name" type="text">
+
+				<input id="email" name="email" placeholder="email@example.com" type="text">
+
+				<textarea id="msg" name="message" placeholder="Message"></textarea>
+
+				<button id="submit"><img src="/images/background/send.png" width="50px" height="50px"></button>
+	    </form>
+
+
+		</div>
+
+
+	</div>
+	<footer>
+		<span class="copyright">&copy; Designed and developed by Aniket Patil</span>
+	</footer>
+</section>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="JS/script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
