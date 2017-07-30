@@ -106,10 +106,10 @@ h2.resume {
 	width: 109px;
 	left:96%;
 	top: 30%;
-  border:0px;
-  margin:0px;
-  color: white;
-  border-radius: 10px;
+	border:0px;
+	margin:0px;
+	color: white;
+	border-radius: 10px;
 }
 #navigation_bar .container-fluid{
 	text-align: left;
@@ -423,7 +423,7 @@ h2.resume {
 }
 
 .timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px,0,0);
+  transform: translate3d(-200px,0,0);
 }
 
 .timeline ul li:nth-child(even) div {
