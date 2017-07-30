@@ -1,4 +1,4 @@
-<!--THEME COLOR: 156A7F -->
+nc<!--THEME COLOR: 156A7F -->
 body {
 	font-family: 'Open Sans', sans-serif !important;
 	height: 100%;
@@ -37,12 +37,12 @@ h2.resume {
 	top: 28%;
 
 }
-hr{
+#front_page hr{
 	width:50%;
 }
+
 .container h1{
-	font-size: 36px;
-	font-weight: bold;
+	font-size: 4em;
 	width: auto;
 	animation-name: loading;
 	animation-duration: 2s;
@@ -172,10 +172,25 @@ hr{
 	color:black;
 	font-family: 'Open Sans', sans-serif !important;
 }
+.buddha_quote{
+	font-style: italic;
+}
  .quote{
 	width: 100%;
 	text-align: center;
 }
+
+.btn-primary{
+	background-color: black;
+	color: #83d5e1;
+
+}
+.btn-primary:hover{
+	background-color: #156a7f;
+}
+
+
+
 .photo_div{
 	margin-top: 20px;
 }
@@ -188,16 +203,39 @@ hr{
 }
 .text_bold_left{
 	font-weight: bold;
-	margin-bottom: 0px;
 	text-align: left;
+	margin-bottom: 0px;
+}
+
+.iframe-container {
+	 padding-bottom: 60%;
+	 padding-top: 30px; height: 0; overflow: hidden;
+
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+
+}
+#downloadResume{
+	margin-top: 30px;
+	text-align: center;
+	/*margin: 0 auto;*/
 }
 
 #projects{
-  background:url('../images/background/project.jpg')no-repeat center center fixed;
+  background:url('../images/background/project1.jpg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	padding-bottom: 50px;
 }
 #projects h2{
 	padding-top: 50px;
@@ -238,11 +276,12 @@ hr{
 .carousel-caption{
 
     position:static;
-     color:white;
+     color:black;
 }
 .carousel-caption .row{
 
-  color: black;
+	color: black;
+	/*background-color: gray;*/
 }
 
 #this-carousel-id h3{
@@ -267,11 +306,17 @@ hr{
 
 #education{
   /*background:url('/images/background/grad.jpg')no-repeat center center fixed;*/
-	background-color: #5ABED1;
+	/*background-color: #5ABED1;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+	background:url('../images/background/pun1.jpg')no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
 #education h2{
 	padding-top: 50px;
@@ -279,6 +324,7 @@ hr{
 	text-align: center;
 	font-family: times;
   margin-top: 0px;
+	/*color: white;*/
 }
 #education .quote{
   width: 100%;
@@ -293,6 +339,11 @@ hr{
 	opacity: 0.8;
 }
 
+
+
+.timeline time{
+	font-size: 1.5em;
+}
 .timeline ul li{
 	list-style-type: none;
 	position: relative;
@@ -319,7 +370,7 @@ hr{
 .timeline ul li div{
 	position: relative;
 	bottom: 0;
-	width: 400px;
+	width: 380px;
 	padding: 25px;
 	background: #166077;
 	color: white;
@@ -393,65 +444,218 @@ hr{
 		width: 7px;
 }
 
+#pubandcert h2{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px  dashed black;
 
-.contactFrm h4 {
-    font-size: 1em;
-    color: #252525;
-    margin-bottom: 0.5em;
-    font-weight: 300;
-    letter-spacing: 5px;
 }
-.contactFrm input[type="text"], .contactFrm input[type="email"] {
-    width: 92%;
-    color: #9370DB;
-    background: #fff;
-    outline: none;
-    font-size: 0.9em;
-    padding: .7em 1em;
-    border: 1px solid #9370DB;
-    -webkit-appearance: none;
-    display: block;
-    margin-bottom: 1.2em;
+
+
+.flip-container {
+	perspective: 1000px;
+	padding-top: 20px;
+	/*text-align: center;*/
+	/*margin-bottom: 50px;*/
 }
-.contactFrm textarea {
-    resize: none;
-    width: 93.5%;
-    background: #fff;
-    color: #9370DB;
-    font-size: 0.9em;
-    outline: none;
-    padding: .6em 1em;
-    border: 1px solid #9370DB;
-    min-height: 10em;
-    -webkit-appearance: none;
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	height: 240px;
+	margin: 0 auto;
+	/*padding-top: 30px;*/
 }
-.contactFrm input[type="submit"] {
-    outline: none;
-    color: #FFFFFF;
-    padding: 0.5em 0;
-    font-size: 1em;
-    margin: 1em 0 0 0;
-    -webkit-appearance: none;
-    background: #9370DB;
-    transition: 0.5s all;
-    border: 2px solid #795CB4;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    width: 47%;
-    cursor: pointer;
+
+/* flip speed goes here */
+.flipper {
+	transition: 1.5s;
+	transform-style: preserve-3d;
+
+	position: relative;
 }
-.contactFrm input[type="submit"]:hover {
-    background: none;
-    color: #9370DB;
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-p.statusMsg{font-size:18px;}
-p.succdiv{color: #008000;}
-p.errordiv{color:#E80000;}
+
+/* front pane, placed above back */
+.front {
+	width: 100%;
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.flip-container img{
+	display: block;
+	margin: auto;
+}
+.flip2{
+	margin-top: 20px;
+}
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	margin-top: 50px;
+}
+
+.back a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#contact {
+	background: url('/images/background/end.jpg');
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	text-align: center;
+}
+#contact h2{
+	margin-top: 0px;
+	color: white;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+	height: 50px;
+	color: white;
+	padding-bottom:80px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+		color:#156A7F ;
+		text-decoration: none;
+}
+
+.contactFrm{
+	display: none;
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background: url('/images/background/end.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow:auto;
+}
+
+#close{
+	position:absolute;
+	right:-14px;
+	top:-14px;
+	cursor:pointer;
+	width: 30px;
+	height: 30px;
+}
+
+.inner_form{
+	position:absolute;
+	left:50%;
+	top:17%;
+	margin-left:-202px;
+	font-family:'Raleway',sans-serif;
+	/*margin: 0 auto;*/
+}
+
+#myForm{
+	max-width:300px;
+	min-width:250px;
+	border-radius:10px;
+	font-family:raleway;
+	background-color:white;
+
+}
+input[type=text] {
+	width:80%;
+	color: white;
+	margin-top: 12px;
+	font-size:16px;
+	font-family:raleway;
+	background-color:white;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+	border-bottom: 1px solid gray;
+}
+
+textarea {
+	width:80%;
+	height:95px;
+	color: white;
+	resize:none;
+	margin-top: 12px;
+	margin-bottom: 20px;
+	font-size:16px;
+	font-family:raleway;
+	background-color:white;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+	border-bottom: 1px solid gray;
+}
+#submit {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px;
+	cursor: pointer;
+	background-color:white;
+	border: 0px;
+
+
+}
+
+#myForm h2{
+	color: black;
+	margin-bottom: 15px;
+}
+
+.copyright{
+	font-size: 1.0em;
+	font-style: italic;
+	color: white;
+}
+/*
+::-webkit-input-placeholder {
+  color: white;
+}
+::-moz-placeholder {
+  color: white;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+:-moz-placeholder {
+  color: white;
+}*/
 
 /* **************** MEDIA QUERIES ********************************/
 
 @media(max-width:991px) and (min-width:768px){
+	#front_page hr{
+		width: 90%;
+	}
 	#about h3{
 		text-align: center;
 	}
@@ -474,6 +678,9 @@ p.errordiv{color:#E80000;}
 
 }
 @media(max-width:767px) and (min-width:340px) {
+	#front_page hr{
+		width: 90%;
+	}
 	.scroll-down{
 		margin-left: 0px;
 		width: 100%;
@@ -539,6 +746,12 @@ p.errordiv{color:#E80000;}
 
 
 @media(max-width:339px) {
+	#front_page h1{
+		font-size: 3.5em;
+	}
+	#front_page hr{
+		width: 90%;
+	}
 	.scroll-down{
 		margin-left: 0px;
 		width: 100%;
