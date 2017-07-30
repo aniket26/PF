@@ -1,15 +1,6 @@
-window.onscroll= function(){
-  function showHeader1(){
-  // $('.carousel').carousel(interval: 2000;)
-  var x = $("#about").position();
-    if (document.body.scrollTop >x.top-200 || document.documentElement.scrollTop > x.top-200) {
-        $("#navigation_bar").fadeIn("slow");
-    } else {
-        $("#navigation_bar").fadeOut("slow");
-    }
-}
-}
-$('.nav').localScroll();
+$(document).ready(function(){
+  showHeader1();
+})
 
 var items = document.querySelectorAll(".timeline li");
 function isElementInViewport(el) {
@@ -91,3 +82,17 @@ $( window ).resize(function() {
 
   }
 });
+
+window.onscroll= function(){
+  function showHeader1(){
+  // $('.carousel').carousel(interval: 2000;)
+  var x = $("#about").position();
+    if (document.body.scrollTop >x.top-200 || document.documentElement.scrollTop > x.top-200) {
+        $("#navigation_bar").fadeIn("slow");
+    } else {
+        $("#navigation_bar").fadeOut("slow");
+    }
+};
+}
+$('.nav').localScroll();
+
