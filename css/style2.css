@@ -588,7 +588,7 @@ h2.resume {
 }
 input[type=text] {
 	width:80%;
-	color: white;
+	color: black;
 	margin-top: 12px;
 	font-size:16px;
 	font-family:raleway;
@@ -601,7 +601,7 @@ input[type=text] {
 
 input[type=email] {
 	width:80%;
-	color: white;
+	color: black;
 	margin-top: 12px;
 	font-size:16px;
 	font-family:raleway;
