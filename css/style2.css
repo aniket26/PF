@@ -599,6 +599,19 @@ input[type=text] {
 	border-bottom: 1px solid gray;
 }
 
+input[type=email] {
+	width:80%;
+	color: white;
+	margin-top: 12px;
+	font-size:16px;
+	font-family:raleway;
+	background-color:white;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+	border-bottom: 1px solid gray;
+}
+
 textarea {
 	width:80%;
 	height:95px;
