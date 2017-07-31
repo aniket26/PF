@@ -373,19 +373,23 @@
 
 	<div class="contactFrm">
 		<div class="inner_form">
-			<div class="response"> </div>
 			<form action="" id="myForm" method="post" name="myForm">
 
 				<img id="close" src="images/background/close.png" onclick ="div_hide()">
 
 				<h2> Contact Me </h2>
-				<input id="name" name="name" placeholder="Your name" type="text" required>
+				
+				<div class="response"></div>
+				<div class="form_elements">
+					<input id="name" name="name" placeholder="Your name" type="text">
 
-				<input id="email" name="_replyto" placeholder="email@example.com" type="email" required>
+					<input id="email" name="email" placeholder="email@example.com" type="text">
 
-				<textarea id="msg" name="message" placeholder="Message"></textarea>
+					<textarea id="msg" name="message" placeholder="Message"></textarea>
 
-				<button id="submit"><img src="images/background/send.png" width="50px" height="50px"></button>
+					<button id="submit"><img src="/images/background/send.png" width="50px" height="50px"></button>
+
+				</div>
 	    </form>
 
 
