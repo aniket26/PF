@@ -615,7 +615,7 @@ input[type=email] {
 textarea {
 	width:80%;
 	height:95px;
-	color: white;
+	color:black;
 	resize:none;
 	margin-top: 12px;
 	margin-bottom: 20px;
